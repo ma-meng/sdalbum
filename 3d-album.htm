@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <!-- saved from url=(0036)http://www.webhek.com/misc/3d-album/ -->
 <!DOCTYPE html PUBLIC "" "">
-<script src="res/ge1doot.js"></script>
+<script src="./res/ge1doot.js"></script>
 <HTML><HEAD><META content="IE=11.0000"
                   http-equiv="X-UA-Compatible">
  
@@ -12,7 +12,7 @@
 <META name="HandheldFriendly" content="true"> 
 <META name="description" content="程序员给女朋友用HTML5制作的3D相册，使用鼠标拖拽，能看到3D旋转效果，点击相片，相片能放大，移近。程序员发挥自己的专长，这是那些不懂编程的人望尘莫及的。本相册使用了HTML5的画布技术，需要谷歌浏览器或火狐浏览器等现代浏览器才能正常观看。"> 
 <META name="keywords" content="canvas,3D,perspective,texturing,gallery"> <LINK 
-href="res/slider-wb.css" rel="stylesheet">
+href="./res/slider-wb.css" rel="stylesheet">
 <TITLE>3D Image album</TITLE> 
 <STYLE>
 html {
@@ -36,8 +36,8 @@ body {
 }
 </STYLE>
  
-<SCRIPT src="res/ge1doot.js"></SCRIPT>
-<SCRIPT src="res/jquery-1.7.2.min.js"></SCRIPT>
+<SCRIPT src="./res/ge1doot.js"></SCRIPT>
+<SCRIPT src="./res/jquery-1.7.2.min.js"></SCRIPT>
  
 <SCRIPT>
 /* 
@@ -274,7 +274,7 @@ body {
 		load : function (data) {
 			window.addEventListener('load', function () {
 				ge1doot.loadJS(
-					"res/imageTransform3D.js",
+					"./res/imageTransform3D.js",
 					init, data
 				);
 			}, false);
@@ -283,21 +283,21 @@ body {
 })().load({
 	imgdata:[
 		// north
-		{img:'img/1.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
-		{img:'img/2.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
-		{img:'img/3.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
+		{img:'./img/1.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
+		{img:'./img/2.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
+		{img:'./img/3.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
 		// east
-		{img:'img/4.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
-		{img:'img/5.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
-		{img:'img/6.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
+		{img:'./img/4.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
+		{img:'./img/5.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
+		{img:'./img/6.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
 		// south
-		{img:'img/7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
-		{img:'img/8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
-		{img:'img/9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
+		{img:'./img/7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
+		{img:'./img/8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
+		{img:'./img/9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
 		// west
-		{img:'img/10.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
-		{img:'img/11.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
-		{img:'img/12.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
+		{img:'./img/10.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
+		{img:'./img/11.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
+		{img:'./img/12.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
 	],
 	structure:[
 		{
